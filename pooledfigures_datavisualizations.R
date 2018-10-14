@@ -59,7 +59,7 @@ deathggplot <- ggplot (deathdata, aes(Age_group, AVG_VALUE, color = Sex)) +
   scale_y_continuous(breaks = c(0, seq(10000, 100000, 10000))) + 
   scale_colour_discrete() +
   # gganimate values 
-  labs(titles = 'Year: {frame_time}', x = 'Age', y = 'Number of Survivors') + 
+  labs(titles = 'Year: {frame_time}', x = 'Age', y = 'Number of Deaths') + 
   transition_time(YEAR)+
   ease_aes('linear')
 
@@ -123,7 +123,7 @@ femaledeathplot <- ggplot(femaledeathdata, aes(Age_group, AVG_VALUE, color = GEO
   scale_x_continuous(breaks = c(0, seq(20,120,20)), limits = c(0, 120)) + 
   scale_y_continuous(breaks = c(0, seq(10000, 100000, 10000))) + 
   scale_color_hue()+
-  labs(titles = 'Year: {frame_time}', x = 'Age', y = 'Number of Survivors') + 
+  labs(titles = 'Year: {frame_time}', x = 'Age', y = 'Number of Deaths') + 
   transition_time(YEAR)+
   ease_aes('linear')
 
@@ -144,7 +144,7 @@ maledeathplot <- ggplot(maledeathdata, aes(Age_group, AVG_VALUE, color = GEO)) +
   scale_x_continuous(breaks = c(0, seq(20,120,20)), limits = c(0, 120)) + 
   scale_y_continuous(breaks = c(0, seq(10000, 100000, 10000))) + 
   scale_color_hue()+
-  labs(titles = 'Year: {frame_time}', x = 'Age', y = 'Number of Survivors') + 
+  labs(titles = 'Year: {frame_time}', x = 'Age', y = 'Number of Deaths') + 
   transition_time(YEAR)+
   ease_aes('linear')
 
